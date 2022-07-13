@@ -4,11 +4,43 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="sass/style.scss">
+    <script defer src="/js/index.js"></script>
     <title>Vite App</title>
   </head>
   <body>
-
+    
+    <main class="container">
+      
+      <header class="header">
+        <div class="header__title"><h1>Simple, traffic-based pricing</h1></div>
+        <div class="header__subheading">Sign-up for our 30-day trial.<br/>No credit card required.</div>
+      </header>
+      <section class="card">
+        <div class="card__heading">100K PAGEVIEWS</div>
+        <div class="card__slider">
+          <input type="range" min="1" max="5" value="3" class="card__range" id="myRange">
+        </div>
+        <div class="card__price">
+          <div class="card__ammount">$16.00</div>
+          <div class="card__recuring">/ month</div>
+        </div>
+        <div class="card__billing">
+          Monthly Billing
+          <input type="checkbox" name="recuring" id="switch"><label for="switch"></label>
+          Yearly Billing
+          <div class="card__discount">-25%</div>
+        </div>
+        <div class="card__features">
+          <span><div class="card__bullet--icon"></div>Unlimited websites</span>
+          <span><div class="card__bullet--icon"></div>100% data ownership</span>
+          <span><div class="card__bullet--icon"></div>Email reports</span>
+        </div>
+        <button class="card__cta">Start my trial</button>
+      </section>
+    </main>
   </body>
 </html>

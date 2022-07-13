@@ -1,0 +1,67 @@
+@use 'utility' as u;
+
+:root {
+
+    //Primary
+    --SoftCyan : hsl(174, 77%, 80%);
+    --StrongCyan : hsl(174, 86%, 45%);
+    --LightGrayishRed : hsl(14, 92%, 95%);
+    --LightRed: hsl(15, 100%, 70%);
+    --PaleBlue: hsl(226, 100%, 87%);
+    
+    //Neutral
+    --White: hsl(0, 0%, 100%);
+    --VeryPaleBlue: hsl(230, 100%, 99%);
+    --LightGrayishBlue: hsl(224, 65%, 95%);
+    --LightGrayishBlue: hsl(223, 50%, 87%);
+    --GrayishBlue: hsl(225, 20%, 60%);
+    --DarkDesaturatedBlue: hsl(227, 35%, 25%);
+
+
+
+    --ff: 'Manrope', sans-serif;
+    --fs-medium: 600;
+    --fs-large: 800;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family:  var(--ff);
+    font-weight: var(--fs-medium);
+    font-size: u.rem(12);
+    background-color: var(--VeryPaleBlue);
+    ;
+    
+}
+
+h1 {
+    font-size: u.rem(20);
+}
+
+
+.container{
+
+    width: 100%;
+    background-image: url('../images/bg-pattern.svg');
+    
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size:   auto 370px;
+}
+
+button {
+    height: u.rem(40);
+    width: u.rem(170);
+    border: none;
+    background-color: var(--DarkDesaturatedBlue);
+    color: var(--PaleBlue);
+    border-radius: u.rem(20);
+    cursor: pointer;
+    transition: color 200ms ease-in-out;
+    margin-bottom: u.rem(30);
+}
+
+button:hover {
+    color: var(--White);
+}

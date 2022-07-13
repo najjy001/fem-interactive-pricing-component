@@ -1,0 +1,24 @@
+@use 'utility' as u;
+
+.header{
+    height: u.rem(150);
+    margin-top: u.rem(55);
+    margin-bottom: u.rem(30);
+    background-image: url(../images/pattern-circles.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 200px;
+
+    &__title{
+        padding-top: u.rem(30);
+
+    }
+
+    &__subheading{
+       padding-top: u.rem(10); 
+       padding-bottom: u.rem(36);
+       line-height: u.rem(24);
+       letter-spacing: u.rem(0.5);
+       color: var(--GrayishBlue);
+    }
+}

@@ -9,7 +9,12 @@
     background-repeat: no-repeat;
     min-width: 200px;
 
+    @include u.breakpoint-up(medium){
+        margin-top: u.rem(65);
+    }
+
     &__title{
+        
         padding-top: u.rem(30);
 
     }
@@ -20,5 +25,12 @@
        line-height: u.rem(24);
        letter-spacing: u.rem(0.5);
        color: var(--GrayishBlue);
+       width: 190px;
+       margin: auto;
+
+        @include u.breakpoint-up(medium){
+            padding-top: u.rem(16); 
+            width: 350px;
+        }
     }
 }

@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="sass/style.scss">
+    <link rel="stylesheet" href="/sass/style.scss">
     <script defer src="/js/index.js"></script>
     <title>Vite App</title>
   </head>
@@ -17,12 +17,12 @@
       
       <header class="header">
         <div class="header__title"><h1>Simple, traffic-based pricing</h1></div>
-        <div class="header__subheading">Sign-up for our 30-day trial.<br/>No credit card required.</div>
+        <div class="header__subheading">Sign-up for our 30-day trial. No credit card required.</div>
       </header>
       <section class="card">
         <div class="card__heading">100K PAGEVIEWS</div>
         <div class="card__slider">
-          <input type="range" min="1" max="5" value="3" class="card__range" id="myRange">
+          <input type="range" min="1" max="5" value="3" class="card__range" id="pageViews">
         </div>
         <div class="card__price">
           <div class="card__ammount">$16.00</div>
@@ -32,14 +32,17 @@
           Monthly Billing
           <input type="checkbox" name="recuring" id="switch"><label for="switch"></label>
           Yearly Billing
-          <div class="card__discount">-25%</div>
+          <div class="card__discount"></div>
         </div>
-        <div class="card__features">
-          <span><div class="card__bullet--icon"></div>Unlimited websites</span>
-          <span><div class="card__bullet--icon"></div>100% data ownership</span>
-          <span><div class="card__bullet--icon"></div>Email reports</span>
+        <div class="card__footer">
+
+          <div class="card__features">
+            <span><div class="card__bullet--icon"></div>Unlimited websites</span>
+            <span><div class="card__bullet--icon"></div>100% data ownership</span>
+            <span><div class="card__bullet--icon"></div>Email reports</span>
+          </div>
+          <button class="card__cta">Start my trial</button>
         </div>
-        <button class="card__cta">Start my trial</button>
       </section>
     </main>
   </body>
